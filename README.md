@@ -29,4 +29,4 @@ I used Soma's basic template and made some changes, using my first project's web
 
 ## Webpage for Power network
 
-
+https://armyniemela.github.io/project02/
