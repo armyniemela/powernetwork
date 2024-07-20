@@ -1,0 +1,275 @@
+source,target,value
+Anne Koutonen,HKScan,5
+Anne Koutonen,Merus Power,5
+Anne Koutonen,Modulight,5
+Anne Koutonen,Componenta,5
+Anne Koutonen,Kojamo,5
+Leena Niemistö,Pihlajalinna,5
+Leena Niemistö,Raisio,5
+Leena Niemistö,Digital Workforce Services,5
+Leena Niemistö,Nightingale Health,5
+Leena Niemistö,Nexstim,5
+Anni Ronkainen,Teleste,5
+Anni Ronkainen,Sitowise,5
+Anni Ronkainen,Loihde,5
+Anni Ronkainen,Lassila & Tikanoja,5
+Anni Ronkainen,Aallon,5
+Mammu Kaario,Puuilo,4
+Mammu Kaario,Gofore,4
+Mammu Kaario,Capman,4
+Mammu Kaario,Ponsse,4
+Robert Ingman,Evli,4
+Robert Ingman,Digia,4
+Robert Ingman,Qt,4
+Robert Ingman,Etteplan,4
+Arja Talma,Nordea,4
+Arja Talma,Glaston,4
+Arja Talma,Metso,4
+Arja Talma,Verkkokauppa.com,4
+Matts Rosenberg,Aktia Pankki,3
+Matts Rosenberg,Terveystalo,3
+Matts Rosenberg,Purmo,3
+Reima Rytsölä,Stora Enso,3
+Reima Rytsölä,Metso,3
+Reima Rytsölä,Nokian Renkaat,3
+Kim Ignatius,Pihlajalinna,3
+Kim Ignatius,Elisa,3
+Kim Ignatius,Duell,3
+Anders Dahlblom,Enersense,3
+Anders Dahlblom,Betolar,3
+Anders Dahlblom,YIT,3
+Johanna Lamminen,Mandatum,3
+Johanna Lamminen,Alisa Pankki,3
+Johanna Lamminen,Cargotec,3
+Tero Weckroth,Alisa Pankki,3
+Tero Weckroth,Nexstim,3
+Tero Weckroth,Inderes,3
+Johan Hammarén,Tecnotree,3
+Johan Hammarén,Capman,3
+Johan Hammarén,Fondia,3
+Kirsi Sormunen,Spinnova,3
+Kirsi Sormunen,Withsecure,3
+Kirsi Sormunen,Exel Composites,3
+Jyri Luomakoski,Purmo,3
+Jyri Luomakoski,Fiskars,3
+Jyri Luomakoski,YIT,3
+Joakim Frimodig,Inderes,3
+Joakim Frimodig,Aktia Pankki,3
+Joakim Frimodig,Capman,3
+Ville Vuori,Aspocomp,3
+Ville Vuori,Enersense,3
+Ville Vuori,Incap,3
+Jaakko Eskola,Valmet,3
+Jaakko Eskola,Cargotec,3
+Jaakko Eskola,Enersense,3
+Lauri Sipponen,HKScan,3
+Lauri Sipponen,Raisio,3
+Lauri Sipponen,Wulff-Yhtiöt,3
+Harri Sivula,Kamux,3
+Harri Sivula,KH Group,3
+Harri Sivula,Tokmanni,3
+Lasse Aho,Robit,3
+Lasse Aho,Puuilo,3
+Lasse Aho,Apetit,3
+Timo Ahopelto,Nokia,3
+Timo Ahopelto,Digital Workforce Services,3
+Timo Ahopelto,Lifeline SPAC I,3
+Jannica  Fagerholm,Mandatum,3
+Jannica  Fagerholm,Kesko,3
+Jannica  Fagerholm,Sampo,3
+Ari Lehtoranta,Terveystalo,3
+Ari Lehtoranta,Orion,3
+Ari Lehtoranta,SRV Yhtiöt,3
+Catharina Stackelberg-Hammarén,Harvia,3
+Catharina Stackelberg-Hammarén,Purmo,3
+Catharina Stackelberg-Hammarén,Alma Media,3
+Jyrki Mäki-Kala,Outokumpu,3
+Jyrki Mäki-Kala,Orthex,3
+Jyrki Mäki-Kala,Anora,3
+Mirel Leino-Haltia,Ålandsbanken,3
+Mirel Leino-Haltia,Sitowise,3
+Mirel Leino-Haltia,Teleste,3
+Christina Dahlblom,Evli,2
+Christina Dahlblom,Viking Line,2
+Tero Ojanperä,Betolar,2
+Tero Ojanperä,Siili Solutions,2
+Marika Auramo,Qt,2
+Marika Auramo,Digital Workforce Services,2
+Petter Söderström,Tietoevry,2
+Petter Söderström,Outokumpu,2
+Juha Vanhainen,Metsä Board,2
+Juha Vanhainen,Ponsse,2
+Tapio Kolunsarka,Cargotec,2
+Tapio Kolunsarka,Aspo,2
+Elina Rahkonen,LapWall,2
+Elina Rahkonen,Kreate,2
+Antti Mäkelä,Witted Megacorp,2
+Antti Mäkelä,Kamux,2
+Kati Riikonen,Kamux,2
+Kati Riikonen,Verkkokauppa.com,2
+Matti Heikkonen,Qt,2
+Matti Heikkonen,QPR Software,2
+Tomas von Rettig,eQ,2
+Tomas von Rettig,Purmo,2
+Eeva Raita,Reka Industrial,2
+Eeva Raita,Titanium,2
+Jukka Moisio,Cargotec,2
+Jukka Moisio,Metsä Board,2
+Kerttu Tuomas,YIT,2
+Kerttu Tuomas,Huhtamäki,2
+Mikko Bergman,Tokmanni,2
+Mikko Bergman,Titanium,2
+Jukka-Pekka Joensuu,Endomines Finland,2
+Jukka-Pekka Joensuu,Administer,2
+Markku Kankaala,NY,2
+Markku Kankaala,Wetteri,2
+Hille Korhonen,Harvia,2
+Hille Korhonen,Asuntosalkku,2
+Yrjö Närhinen,Oriola,2
+Yrjö Närhinen,LeadDesk,2
+Sari Pohjonen,Aktia Pankki,2
+Sari Pohjonen,Lindex,2
+Arto Martonen,Vincit,2
+Arto Martonen,Alexandria,2
+Mikko Wirén,Pihlajalinna,2
+Mikko Wirén,Eezy,2
+Henna Mäkinen,Siili Solutions,2
+Henna Mäkinen,Admicom,2
+Jukka Jokela,Endomines Finland,2
+Jukka Jokela,Sotkamo Silver,2
+Vesa Silaskivi,Spinnova,2
+Vesa Silaskivi,Biohit,2
+Kristian Pullola,Terveystalo,2
+Kristian Pullola,Kemira,2
+Timo Pekkarinen,Kreate,2
+Timo Pekkarinen,LapWall,2
+Tuomas Syrjänen,Vaisala,2
+Tuomas Syrjänen,Withsecure,2
+Pekka Kemppainen,Bittium,2
+Pekka Kemppainen,Valmet,2
+Georg Ehrnrooth,eQ,2
+Georg Ehrnrooth,Sampo,2
+Heli Iisakka,Pihlajalinna,2
+Heli Iisakka,SRV Yhtiöt,2
+Sami Honkonen,Fondia,2
+Sami Honkonen,Alisa Pankki,2
+Erkki Järvinen,Fodelia,2
+Erkki Järvinen,Tokmanni,2
+Annika Paasikivi,Valmet,2
+Annika Paasikivi,Kemira,2
+Katarina Cantell,Siili Solutions,2
+Katarina Cantell,Solteq,2
+Annareetta Lumme-Timonen,Valmet,2
+Annareetta Lumme-Timonen,Anora,2
+Kai Tavakka,Remedy Entertainment,2
+Kai Tavakka,SSAB Communications Security,2
+Olli Liitola,Harvia,2
+Olli Liitola,Capman,2
+Niilo Fredrikson,Efecte,2
+Niilo Fredrikson,Withsecure,2
+Elina Björklund,Nokian Renkaat,2
+Elina Björklund,Taaleri,2
+Carl Haglund,Aktia Pankki,2
+Carl Haglund,Enersense,2
+Kaisa Salakka,Remedy Entertainment,2
+Kaisa Salakka,Alma Media,2
+Erja Sankari,Partnera,2
+Erja Sankari,Nurminen Logistics,2
+Terhi Koipijärvi,Ponsse,2
+Terhi Koipijärvi,Metso,2
+Timo Mänty,NoHo Partners,2
+Timo Mänty,KH Group,2
+Jukka Leinonen,Pihlajalinna,2
+Jukka Leinonen,Lassila & Tikanoja,2
+Heikki Länsisyrjä,PunaMusta Media,2
+Heikki Länsisyrjä,Digital Workforce Services,2
+Timo Lappi,Fondia,2
+Timo Lappi,Witted Megacorp,2
+Ann-Christine Sundell,Revenio,2
+Ann-Christine Sundell,Raisio,2
+Teemu Kangas-Kärki,Marimekko,2
+Teemu Kangas-Kärki,Lassila & Tikanoja,2
+Tarja  Pääkkönen,United Bankers,2
+Tarja  Pääkkönen,Panostaja,2
+Tapani Rautiainen,Ovaro Kiinteistösioitus,2
+Tapani Rautiainen,Investors House,2
+Kaarina Ståhlberg,Aspo,2
+Kaarina Ståhlberg,Vaisala,2
+Kai Telanne,Robit,2
+Kai Telanne,Teleste,2
+Piia-Noora Kauppi,Gofore,2
+Piia-Noora Kauppi,UPM-Kymmene,2
+Taina Ahvenjärvi,Ovaro Kiinteistösioitus,2
+Taina Ahvenjärvi,Investors House,2
+Esa Lager,Alma Media,2
+Esa Lager,Ilkka,2
+Hanna Maria Sievinen,Taaleri,2
+Hanna Maria Sievinen,Koskisen,2
+Petri Castrén,Taaleri,2
+Petri Castrén,Vaisala,2
+Pasi Laine,Neste,2
+Pasi Laine,Konecranes,2
+Petri Roininen,Investors House,2
+Petri Roininen,Ovaro Kiinteistösioitus,2
+Jarmo Halonen,BBS-Bioactive Bone Substitutes,2
+Jarmo Halonen,Elecster,2
+Teresa Kemppi-Vasama,Kempower,2
+Teresa Kemppi-Vasama,Cargotec,2
+Mika Ihamuotila,Sanoma,2
+Mika Ihamuotila,Marimekko,2
+Sari Helander,Evli,2
+Sari Helander,Enersense,2
+Henri Österlund,Remedy Entertainment,2
+Henri Österlund,SSAB Communications Security,2
+Risto Murto,Nordea,2
+Risto Murto,Sampo,2
+Timo Kohtamäki,Kreate,2
+Timo Kohtamäki,Honkarakenne,2
+Klaus Cawén,Sanoma,2
+Klaus Cawén,Metso,2
+Paul Ehrnrooth,Digitalist,2
+Paul Ehrnrooth,Fiskars,2
+Petri  Kärkkäinen,Toivo,2
+Petri  Kärkkäinen,Titanium,2
+Jostein Vik,LeadDesk,2
+Jostein Vik,Heeros,2
+Pekka Vauramo,Nokian Renkaat,2
+Pekka Vauramo,Huhtamäki,2
+Mikko Kuitunen,Robit,2
+Mikko Kuitunen,Vincit,2
+Irmeli Rytkönen,Verkkokauppa.com,2
+Irmeli Rytkönen,Nurminen Logistics,2
+Heikki Westerlund,Oriola,2
+Heikki Westerlund,Aspo,2
+Risto Siilasmaa,F-Secure,2
+Risto Siilasmaa,Withsecure,2
+Päivi Marttila,Reka Industrial,2
+Päivi Marttila,Aspocomp,2
+Kaj Hagros,Loihde,2
+Kaj Hagros,Inderes,2
+Patrick Lapveteläinen,Mandatum,2
+Patrick Lapveteläinen,Enento,2
+Petri Rignell,Kreate,2
+Petri Rignell,Consti,2
+Harri Tahkola,Toivo,2
+Harri Tahkola,Talenom,2
+Matti Kähkönen,Kemira,2
+Matti Kähkönen,Neste,2
+Mikael Aro,Caverion,2
+Mikael Aro,Kojamo,2
+Mikael Mäkinen,SSAB,2
+Mikael Mäkinen,Valmet,2
+Timur Kärki,Modulight,2
+Timur Kärki,Gofore,2
+Eeva-Liisa Virkkunen,Robit,2
+Eeva-Liisa Virkkunen,Sotkamo Silver,2
+Sanna Suvanto-Harsaae,Finnair,2
+Sanna Suvanto-Harsaae,Orthex,2
+Pertti Ervi,F-Secure,2
+Pertti Ervi,QPR Software,2
+Harri Suutari,PunaMusta Media,2
+Harri Suutari,Componenta,2
+Kari Jordan,Stora Enso,2
+Kari Jordan,Outokumpu,2
+Luisa Delgado,Fortum,2
+Luisa Delgado,Telia Company,2

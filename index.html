@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Myproject02</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-family: 'Lora', Georgia, sans-serif;
+            text-rendering: optimizeLegibility;
+        }
+
+        .content {
+            max-width: 640px;
+            margin: auto;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        .header {
+            padding: 2em 0;
+        }
+
+        a {
+            color: lightcoral;
+        }
+
+        .footer {
+            background: #f4f4f4;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 3em;
+            padding: 3em 0;
+        }
+
+        figure {
+            margin: 0;
+            padding-bottom: 1em;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            color: #666;
+        }
+
+        h1 {
+            font-family: 'Lora', Georgia, sans-serif;
+            font-weight: bold;
+            font-size: 3em;
+            line-height: 1.1;
+        }
+
+        .subhead {
+            font-family: 'Lora', Georgia, sans-serif;
+        }
+
+        iframe,
+        img,
+        video {
+            max-width: 100%;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 1em;
+        }
+
+        ul {
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 1.6;
+        }
+
+        iframe {
+            padding-bottom: 1em;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background: #fffbaf;
+            font-size: 0.85em;
+        }
+
+        .full-width figure {
+            text-align: center;
+        }
+
+        /* margin on mobile */
+        @media (max-width: 640px) {
+            body {
+                font-size: 18px;
+            }
+
+            .content {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>Network of Influence: Few Have Huge Connections</h1>
+            <p class="subhead"> I took a fresh look at how power is distributed based on board seats and who has the 
+                'most influential networks' according to the market values of the companies.</p>
+        </div>
+        <div class="byline">
+            <p><a><span style="color:salmon;"><b>By Armi Niemela</b></span></a></p>
+        </div>
+        <p>Investors should know who has control over how their money is used. On behalf of Finnish investors, the investment-focused Arvopaperi magazine monitors this power. 
+            The magazine conducts an annual survey on the power network of publicly traded companies, and my project is a spin-off from <a href="https://www.arvopaperi.fi/uutiset/tallainen-on-helsingin-porssin-vallan-verkosto-risto-murto-vahtii-viidesosaa-porssin-markkina-arvosta-arja-talma-47-7-miljardia-euroa/c48e0689-2410-4b32-8eb5-a84c53971bdb" target="_blank"> 
+            this year's survey </a> conducted in the spring.</p>
+
+        <p> Majority of the people on Finnish company boards have just one board seat - 14 percent have more than that. 
+            There are a total of 1346 board seats in Finnish listed companies and 1144 individuals who hold them.
+            While some do have have power in multiple companies, only a few have truly extensive networks when measured by the number of board seats. 
+            The average number of board seats per person is 1,2. The percentage of three board seats is 6,2.
+            <p>Almost 20 percent of those who are board members in Finnish public companies sit on two different boards.</p>
+            <p></p>
+            
+            <h2>Eight percent of all board members have big network of power</h2>
+            <h5>A square represents one board seat</h5>
+
+        <div id="my-svg-chart"></div>
+        <script>
+            d3.csv("powerpeople.csv")
+                .then(data => {
+                    console.log(data);
+                    const myChart = d3.select('#my-svg-chart')
+                        .append('svg')
+                        .attr('width', 800)
+                        .attr('height', 800);
+
+                    const legendData = [
+                        { label: '5 board seats: 3', color: 'Maroon' },
+                        { label: '4 board seats: 3', color: 'IndianRed' },
+                        { label: '3 board seats: 28', color: 'pink' },
+                        { label: '2 board seats: 125 ', color: 'LightCoral' },
+                        { label: '1 board seat: 985', color: 'LightSalmon' }
+                    ];
+
+                    const legend = myChart.selectAll('.legend')
+                        .data(legendData)
+                        .enter()
+                        .append('g')
+                        .attr('class', 'legend')
+                        .attr('transform', (d, i) => `translate(0, ${i * 20})`);
+
+                    legend.append('rect')
+                        .attr('x', 10)
+                        .attr('y', 10)
+                        .attr('width', 10)
+                        .attr('height', 10)
+                        .style('fill', d => d.color);
+
+                    legend.append('text')
+                        .attr('x', 25)
+                        .attr('y', 15)
+                        .attr('dy', '.35em')
+                        .style('text-anchor', 'start')
+                        .text(d => d.label);
+
+                    const tooltip = d3.select("body")
+                        .append("div")
+                        .style("position", "absolute")
+                        .style("visibility", "hidden")
+                        .style("background-color", "white")
+                        .style("border", "1px solid #ccc")
+                        .style("padding", "5px")
+                        .style("border-radius", "5px")
+                        .style("box-shadow", "0px 0px 5px #aaa");
+
+                    const Boardseats = myChart.selectAll('rect.Boardseats')
+                        .data(data)
+                        .join('rect')
+                        .attr('class', 'Boardseats');
+
+                    const gridSize = 15, gap = 2;
+
+                    Boardseats.attr('x', (d, i) => Math.floor(i % 34) * (gridSize + gap))
+                        .attr('y', (d, i) => Math.floor(i / 34) * (gridSize + gap) + (legendData.length * 30))
+                        .attr('width', gridSize)
+                        .attr('height', gridSize)
+                        .style('fill', d => {
+                            if (d.Boardseats == '5') { return 'Maroon' }
+                            if (d.Boardseats == '4') { return 'IndianRed' }
+                            if (d.Boardseats == '3') { return 'pink' }
+                            if (d.Boardseats == '2') { return 'LightCoral' }
+                            if (d.Boardseats == '1') { return 'LightSalmon' }
+                        })
+                        .on("mouseover", (event, d) => {
+                            tooltip.style("visibility", "visible")
+                                .text(`Board member: ${d.Names}`);
+                        })
+                        .on("mousemove", (event) => {
+                            tooltip.style("top", (event.pageY - 10) + "px")
+                                .style("left", (event.pageX + 10) + "px");
+                        })
+                        .on("mouseout", () => {
+                            tooltip.style("visibility", "hidden");
+                        });
+
+                });
+        </script>
+
+    <p>Risto Murto belongs to the 20 percent of board members who hold seats on the boards of two publicly listed companies. 
+        However, he stands out above the others in terms of influence. Finns know Murto as the CEO of the pension company Varma. 
+        Pension companies, including Varma, are major owners in many of the companies on the Helsinki Stock Exchange. 
+        Additionally, the boards he serves on are two publicly listed companies that are among the most 
+        popular investment targets for Finns: Nordea Bank and the insurance company Sampo. </p>
+    <p>Arja Talma is one of the three people who have five board seats. She is not a well-known figure like Murto, 
+        but she is the most influential board professional in Finland. Talma oversees a market value of approximately 
+        47.7 billion euros on the stock exchange. Talma has primarily focused on board work since the mid-2010s. She serves 
+        on the boards of Metso and Glaston and is the chair of the board of Verkkokauppa.com.  
+        Talma has been a member of Nordea's board since 2022. </p>
+    <p>Based on company market value, all 14 members of Nordea's board are influential. However, in the graphic below, three 
+        of them are highlighted along with Murto and Talma, as it shows the top five by the combined market value of their companies.</p>
+
+        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/18794888"><script 
+            src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+
+    <p>Below you can see a network with 119 board members and 136 companies from the Helsinki Stock Exchange. The network graph excludes individuals and companies that do not form links with others. The data is based on a survey 
+    by Arvopaperi, conducted in the spring of 2024, so some information may have changed, for example, due to stock listings.</p>
+
+
+    <div class="flourish-embed flourish-network" data-src="visualisation/18783459">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+    </div>
+
+    
+    <div class="content">
+        <p>This review is limited to the stock market, but many board members also have connections and positions of trust 
+            outside the stock market. Also I haven't  taken into account CEO positions.</p> 
+        <p>In some listed companies, the CEO even serves on the board, such as Aarne Simula at Wetteri. It's more common for the CEO of a publicly listed company to be a sought-after member 
+            of another company's board. Huhtamäki's CEO Charles Héaulmé is the chairman of Suominen's board and Topi Manner is CEO at Elisa and a board member of UPM-Kymmene. 
+            According to Arvopaperi's article, there are five CEO's who are board members in other listed companies</p>
+        <p>Perhaps this indicates that power always seeks contact with power.</p>
+        </div>
+    
+</body>
+
+</html>
